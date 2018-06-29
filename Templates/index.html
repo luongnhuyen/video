@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cms App</title>
+  </head>
+  <body>
+    <h1>Cms App</h1>
+    <h1>
+      <a href={{url_for('login')}}>login</a>
+    </h1>
+      {% for video in videos %}
+        <div>
+          <img src="{{video.thumbnail}}" alt="" width="200px" height="130px">
+          <br>
+          <b>{{video.title}}</b>
+          <br>
+          <span>{{video.views}} Views</span>
+          <br>
+          <!--  youtube_id: id of youtube video Not id of mlab-->
+          <a href="{{url_for('detail',youtube_id=video.youtube_id)}}">Xem</a>
+
+        </div>
+
+      {% endfor %}
+  </body>
+</html>

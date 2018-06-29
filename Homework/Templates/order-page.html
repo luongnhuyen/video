@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mua dong khong lanh</title>
+  </head>
+  <body>
+    <h1>Order page</h1>
+    {% for service in all_service %}
+    <table border="1px">
+      <thead>
+        <th>STT</th>
+        <th>Đối tác</th>
+        <th>Người dùng</th>
+        <th>Thời gian yêu cầu</th>
+        <th></th>
+      </thead>
+      <tbody>
+        {% for video in videos %}
+          <tr>
+            <td>{{loop.index}}</td>
+            <td>{{order.nameservice}}</td>
+            <td>{{order.username}}</td>
+            <td>{{order.time}}</td>
+            <td></td>
+            
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endfor %}
+  </body>
+</html>
