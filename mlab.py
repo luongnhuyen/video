@@ -1,12 +1,12 @@
 import mongoengine
 
-# mongodb://<dbuser>:<dbpassword>@ds231360.mlab.com:31360/cms-app-c4e
+# mongodb://<dbuser>:<dbpassword>@ds135290.mlab.com:35290/video
 
-host = "ds231360.mlab.com"
-port = 31360
-db_name = "cms-app-c4e"
-user_name = "admin"
-password = "admin"
+host = "ds135290.mlab.com"
+port = 35290
+db_name = "video"
+user_name = "admin1"
+password = "admin1"
 
 
 def connect():
